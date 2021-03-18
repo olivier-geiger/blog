@@ -1,0 +1,16 @@
+.btn {
+    padding: .5rem .8rem;
+    margin: 0 5px;
+    background-color:#fb743e;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn:hover,
+.btn:focus {
+    background-color: #9c2f04;
+    color: #fff;
+    
+}

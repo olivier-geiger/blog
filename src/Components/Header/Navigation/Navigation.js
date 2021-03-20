@@ -1,10 +1,10 @@
 // Librairies
-import React from 'react'
-import classes from './Navigation.module.css'
-import routes from '../../../routes'
+import React from 'react';
+import classes from './Navigation.module.css';
+import routes from '../../../routes';
 
 // Composants
-import NavigationItem from './NavigationItem/NavigationItem'
+import NavigationItem from './NavigationItem/NavigationItem';
 
 function Navigation() {
     return (

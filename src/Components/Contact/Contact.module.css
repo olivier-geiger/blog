@@ -1,16 +1,14 @@
-.btn {
-    padding: .5rem .8rem;
-    margin: 0 5px;
-    background-color:#fb743e;
-    color: #fff;
-    outline: none;
-    border: none;
+.button {
+    border: 0;
+    padding: 10px 15px;
+    background-color: #fb743e;
+    color: white;
+    margin: 5px;
+    border-radius: 4px;
     cursor: pointer;
-    border-radius: 5px;
 }
-.btn:hover,
-.btn:focus {
-    background-color: #9c2f04;
-    color: #fff;
-    
+
+.button:focus,
+.button:hover {
+    background-color: #d3450d;
 }

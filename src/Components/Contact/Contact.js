@@ -1,34 +1,33 @@
-// library
+// Librairies
 import React from 'react'
-import { Route } from 'react-router-dom'
-
-// components
 import classes from './Contact.module.css'
-import Telephone from './Telephone'
+import { Route } from 'react-router-dom'
 import Email from './Email'
+import Telephone from './Telephone'
 
 function Contact(props) {
 
-  // fonctions
-  const mobileClickHandler = () => {
-    props.history.push(props.match.url + '/telephone')
-  }
+    // Fonctions
+    const emailClickedHandler = () => {
+        props.history.push(props.match.url + '/email');
+    }
 
-  const emailClickHandler = () => {
-    props.history.push(props.match.url + '/email')
-  }
+    const callClickedHandler = () => {
+        props.history.push(props.match.url + '/telephone');
+    }
 
-  return (
-    <>
-      <h1>Contact</h1>
-      <p>Par quel moyen de contact voulez-vous échanger ?</p>
-      <button onClick={mobileClickHandler} className={classes.btn}>Téléphone</button>
-      <button onClick={emailClickHandler}className={classes.btn}>email</button>
-
-      <Route path={props.match.url + "/telephone"} render={() => <p>téléphone :</p>} component={Telephone} />
-      <Route path={props.match.url + "/email"} render={() => <p>email :</p>} component={Email}/>
-    </>
-  )
+    return (
+        <>
+            <h1>Contact</h1>
+            <p>Par quel moyen de contact soyez-vous échanger ?</p>
+            <button onClick={emailClickedHandler} className={classes.button}>Email</button>
+                {Email}
+            <button onClick={callClickedHandler} className={classes.button}>Téléphone</button>
+        
+            <Route path={props.match.url + "/email"} render={() => <p>Email</p>} component={Email}/>
+            <Route path={props.match.url + "/telephone"} render={() => <p>Téléphone</p>} component={Telephone}/>
+        </>
+    );
 }
 
 export default Contact;

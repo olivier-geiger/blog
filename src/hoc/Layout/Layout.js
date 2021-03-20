@@ -1,17 +1,27 @@
-// library
-import React from 'react'
-import classes from './Layout.module.css'
+// Librairie
+import React from 'react';
+import classes from './Layout.module.css';
 
-// Component
-import Header from '../../Components/Header/Header'
+// Composant
+import Header from '../../Components/Header/Header';
 
 function Layout(props) {
-  return (
-      <>
-        <Header />
-        {props.children}
-      </>
-  );
+    return (
+        <>
+            <Header />
+
+            {props.children}
+
+            {/* Pied de page */}
+        </>
+    );
 }
+
+/*
+    - Header
+        - logo
+        - Navigation
+            - NavigationItem
+*/
 
 export default Layout;

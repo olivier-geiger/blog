@@ -1,6 +1,6 @@
-const routes= {
+const routes = {
     HOME: '/',
-    CONTACT: '/callOlivier',
+    CONTACT: '/contact',
     ARTICLES: '/articles',
     AJOUTER: '/admin/ajouter'
 }

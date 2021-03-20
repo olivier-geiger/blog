@@ -9,6 +9,6 @@
 
 .NavigationItem a:hover,
 .NavigationItem a:focus,
-.NavigationItem a:active {
+.NavigationItem a.active {
     color: #fb743e;
 }
